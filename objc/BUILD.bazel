@@ -1,0 +1,13 @@
+package(default_visibility = ["//visibility:public"])
+
+load(
+    "@rules_apple_line//apple:objc_static_framework.bzl",
+    "objc_static_framework",
+)
+
+objc_static_framework(
+    name = "ExceptionCatcher",
+    srcs = ["ExceptionCatcher.m"],
+    hdrs = ["ExceptionCatcher.h"],
+    module_name = "ExceptionCatcher",
+)
